@@ -8,5 +8,6 @@
 </head>
 <body>
     <h1>hello world</h1>
+    <p>OJT頑張りましょう！</p>
 </body>
 </html>
