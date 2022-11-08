@@ -11,10 +11,11 @@
 
 .kvpccenter {
     position: relative;
+    width: 1024px;
+    // margin: 0 auto;
     .center02 {
         position: absolute;
-        right: 0;
-        bottom: 0;
-        
+        right: -110px;
+        bottom: -40px;
     }
 }

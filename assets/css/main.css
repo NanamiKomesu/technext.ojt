@@ -10,11 +10,12 @@
 
 .kvpccenter {
   position: relative;
+  width: 1024px;
 }
 .kvpccenter .center02 {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: -110px;
+  bottom: -40px;
 }
 
 body {
@@ -51,5 +52,5 @@ article .blogcontainer .bloglink a {
   margin: 50px auto;
 }
 article .blogcontent img:hover {
-  box-shadow: 2px 2px 2px black;
+  box-shadow: 5px 5px 5px 5px #545252;
 }/*# sourceMappingURL=main.css.map */
