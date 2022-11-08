@@ -4,7 +4,7 @@ body {
 }
 
 #main {
-    margin: 0 100px;
+    margin: 0 50px;
 }
 
 article {
@@ -25,7 +25,10 @@ article {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-
+        width: 1024px ;
+.blogcontent{
+width: 30%;
+}
         .bloglink a {
             display: flex;
             justify-content: flex-end;
