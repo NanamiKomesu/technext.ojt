@@ -3,17 +3,20 @@ body {
   margin: auto;
 }
 
-article {
-  margin: 0 auto;
+article h1, article p, article a {
+  font-weight: 600;
 }
-article .blogTitle {
+article .blogtitle {
   font-size: 30px;
-}
-article .blogTitle {
   text-align: center;
+  margin: 30px auto;
 }
-article .blog-container {
+article .blogcontainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+article .blogcontainer .bloglink {
+  display: flex;
+  justify-content: flex-end;
 }/*# sourceMappingURL=main.css.map */
