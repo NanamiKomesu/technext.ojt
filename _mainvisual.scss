@@ -1,0 +1,20 @@
+// 知花
+.kvpctop {
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    .topright{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.kvpccenter {
+    position: relative;
+    .center02 {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        
+    }
+}

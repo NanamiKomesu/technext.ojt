@@ -1,9 +1,34 @@
+.kvpctop {
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+.kvpctop .topright {
+  display: flex;
+  justify-content: space-around;
+}
+
+.kvpccenter {
+  position: relative;
+}
+.kvpccenter .center02 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
 body {
   max-width: 1152px;
   margin: auto;
 }
 
-article h1, article p, article a {
+#main {
+  margin: 0 100px;
+}
+
+article h1,
+article p,
+article a {
   font-weight: 600;
 }
 article .blogtitle {
@@ -16,7 +41,11 @@ article .blogcontainer {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-article .blogcontainer .bloglink {
+article .blogcontainer .bloglink a {
   display: flex;
   justify-content: flex-end;
+  margin: 50px auto;
+}
+article .blogcontent img:hover {
+  box-shadow: 2px 2px 2px black;
 }/*# sourceMappingURL=main.css.map */
