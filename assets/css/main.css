@@ -1,1 +1,19 @@
-/*# sourceMappingURL=main.css.map */
+body {
+  max-width: 1152px;
+  margin: auto;
+}
+
+article {
+  margin: 0 auto;
+}
+article .blogTitle {
+  font-size: 30px;
+}
+article .blogTitle {
+  text-align: center;
+}
+article .blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}/*# sourceMappingURL=main.css.map */
