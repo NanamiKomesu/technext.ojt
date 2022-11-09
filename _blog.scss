@@ -1,14 +1,14 @@
 // レスポンシブ(spブレイクポイント)
-$sp:767px;
+$sp: 767px;
 
-main {
+main,header {
     max-width: 1152px;
-    margin: auto;
-}
-
-#main {
     margin: 0 auto;
 }
+
+// #main {
+//     margin: 0 auto;
+// }
 
 article {
 
@@ -29,57 +29,68 @@ article {
         margin-top: 15px;
     }
 
+    .blogcontent:hover {
+        box-shadow: 1px 1px 12px rgba(0, 0, 0, .65);
+    }
+
     .blogcontainer {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         width: 1024px;
+        margin: 0 auto;
+
+
+        @media screen and (max-width:$sp) {
+            display: block;
+            margin: 0 auto;
+        }
 
         .blogcontent {
             width: 30%;
             margin-bottom: 40px;
         }
 
-        .blogtxt {
-            height: 200px;
-            margin: 0 10px;
-            display: flex;
-            flex-direction: column;
-        }
+    }
 
-
-        .bloglink {
-            font-size: 13px;
-            margin-top: auto;
-            margin-bottom: 40px;
-            text-align: right;
-
-
-            a::after {
-                content:"";
-                display: block;
-                width: 20px;
-                height: 2px;
-                background-color: black;
-                margin-left: auto;
-            }
-            a:hover:after{
-                width: 85px;
-                height: 2px;
-                content:"";
-                display: block;
-                background-color: black;
-                margin-left: auto;
-                transition: 0.5s;
-            }  
-        }
-
+    .blogtxt {
+        height: 200px;
+        margin: 0 10px;
+        display: flex;
+        flex-direction: column;
     }
 
 
+    .bloglink {
+        font-size: 13px;
+        margin-top: auto;
+        margin-bottom: 40px;
+        text-align: right;
 
-    // articleここまで
+
+        a::after {
+            content: "";
+            display: block;
+            width: 20px;
+            height: 2px;
+            background-color: black;
+            margin-left: auto;
+        }
+
+        a:hover:after {
+            width: 85px;
+            height: 2px;
+            content: "";
+            display: block;
+            background-color: black;
+            margin-left: auto;
+            transition: 0.5s;
+        }
+    }
 }
+
+// articleここまで
+
 
 footer {
     margin-top: 50px;

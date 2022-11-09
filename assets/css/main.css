@@ -70,12 +70,8 @@
     top: 30px;
   }
 }
-main {
+main, header {
   max-width: 1152px;
-  margin: auto;
-}
-
-#main {
   margin: 0 auto;
 }
 
@@ -93,29 +89,39 @@ article .blogmsg {
   font-size: 15px;
   margin-top: 15px;
 }
+article .blogcontent:hover {
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.65);
+}
 article .blogcontainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 1024px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+  article .blogcontainer {
+    display: block;
+    margin: 0 auto;
+  }
 }
 article .blogcontainer .blogcontent {
   width: 30%;
   margin-bottom: 40px;
 }
-article .blogcontainer .blogtxt {
+article .blogtxt {
   height: 200px;
   margin: 0 10px;
   display: flex;
   flex-direction: column;
 }
-article .blogcontainer .bloglink {
+article .bloglink {
   font-size: 13px;
   margin-top: auto;
   margin-bottom: 40px;
   text-align: right;
 }
-article .blogcontainer .bloglink a::after {
+article .bloglink a::after {
   content: "";
   display: block;
   width: 20px;
@@ -123,7 +129,7 @@ article .blogcontainer .bloglink a::after {
   background-color: black;
   margin-left: auto;
 }
-article .blogcontainer .bloglink a:hover:after {
+article .bloglink a:hover:after {
   width: 85px;
   height: 2px;
   content: "";
