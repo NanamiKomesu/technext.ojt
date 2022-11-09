@@ -1,7 +1,8 @@
 // レスポンシブ(spブレイクポイント)
 $sp: 767px;
 
-main,header {
+main,
+header {
     max-width: 1152px;
     margin: 0 auto;
 }
@@ -40,10 +41,9 @@ article {
         width: 1024px;
         margin: 0 auto;
 
-
         @media screen and (max-width:$sp) {
             display: block;
-            margin: 0 auto;
+
         }
 
         .blogcontent {
@@ -51,40 +51,39 @@ article {
             margin-bottom: 40px;
         }
 
-    }
-
-    .blogtxt {
-        height: 200px;
-        margin: 0 10px;
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .bloglink {
-        font-size: 13px;
-        margin-top: auto;
-        margin-bottom: 40px;
-        text-align: right;
-
-
-        a::after {
-            content: "";
-            display: block;
-            width: 20px;
-            height: 2px;
-            background-color: black;
-            margin-left: auto;
+        .blogtxt {
+            height: 200px;
+            margin: 0 10px;
+            display: flex;
+            flex-direction: column;
         }
 
-        a:hover:after {
-            width: 85px;
-            height: 2px;
-            content: "";
-            display: block;
-            background-color: black;
-            margin-left: auto;
-            transition: 0.5s;
+
+        .bloglink {
+            font-size: 13px;
+            margin-top: auto;
+            margin-bottom: 40px;
+            text-align: right;
+
+
+            a::after {
+                content: "";
+                display: block;
+                width: 20px;
+                height: 2px;
+                background-color: black;
+                margin-left: auto;
+            }
+
+            a:hover:after {
+                width: 85px;
+                height: 2px;
+                content: "";
+                display: block;
+                background-color: black;
+                margin-left: auto;
+                transition: 0.5s;
+            }
         }
     }
 }

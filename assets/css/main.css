@@ -25,11 +25,10 @@
 }
 
 .kvpccenter {
-  margin: 0 auto;
   position: relative;
-  width: 88.9%;
 }
 .kvpccenter .center01 {
+  margin: 0 auto;
   display: block;
 }
 .kvpccenter .center02 {
@@ -70,7 +69,8 @@
     top: 30px;
   }
 }
-main, header {
+main,
+header {
   max-width: 1152px;
   margin: 0 auto;
 }
@@ -102,26 +102,25 @@ article .blogcontainer {
 @media screen and (max-width: 767px) {
   article .blogcontainer {
     display: block;
-    margin: 0 auto;
   }
 }
 article .blogcontainer .blogcontent {
   width: 30%;
   margin-bottom: 40px;
 }
-article .blogtxt {
+article .blogcontainer .blogtxt {
   height: 200px;
   margin: 0 10px;
   display: flex;
   flex-direction: column;
 }
-article .bloglink {
+article .blogcontainer .bloglink {
   font-size: 13px;
   margin-top: auto;
   margin-bottom: 40px;
   text-align: right;
 }
-article .bloglink a::after {
+article .blogcontainer .bloglink a::after {
   content: "";
   display: block;
   width: 20px;
@@ -129,7 +128,7 @@ article .bloglink a::after {
   background-color: black;
   margin-left: auto;
 }
-article .bloglink a:hover:after {
+article .blogcontainer .bloglink a:hover:after {
   width: 85px;
   height: 2px;
   content: "";
