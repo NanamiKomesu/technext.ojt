@@ -1,16 +1,18 @@
 .kvpctop {
   position: relative;
-  top: 125px;
   display: flex;
   justify-content: space-between;
   z-index: 1;
+  margin-top: 50px;
 }
 .kvpctop .logo {
   width: 21%;
+  position: absolute;
 }
 .kvpctop .topright {
   display: flex;
-  justify-content: space-around;
+  margin: 0 0 0 auto;
+  padding-bottom: 50px;
 }
 .kvpctop .topright .limenu {
   padding-top: 10%;
@@ -19,6 +21,7 @@
 
 .kvpcdown {
   font-size: 24px;
+  padding-top: 10px;
 }
 
 .kvpccenter {
@@ -26,18 +29,21 @@
   position: relative;
   width: 88.9%;
 }
+.kvpccenter .center01 {
+  display: block;
+}
 .kvpccenter .center02 {
   position: absolute;
   width: 48.3%;
   right: -60px;
-  bottom: -40px;
+  bottom: -49px;
 }
 
 .kvspmain {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .kvpcmain {
     display: none;
   }
@@ -48,16 +54,18 @@
   .kvspmain .splogo {
     margin-top: 50px;
     margin-bottom: 30px;
+    width: 31.6%;
   }
   .kvspmain .kvspimg {
     position: relative;
   }
   .kvspmain .kvspimg .kvspimg01 {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   .kvspmain .kvspimg .kvspimg02 {
     position: absolute;
+    width: 64.5%;
     left: 30px;
     top: 30px;
   }

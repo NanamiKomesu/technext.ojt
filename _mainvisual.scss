@@ -1,17 +1,21 @@
 // 知花
 .kvpctop {
     position: relative;
-    top: 125px;
+    // top: 125px;
     display: flex;
     justify-content: space-between;
     z-index: 1;
+    margin-top: 50px;
     .logo {
         width: 21%;
+        position: absolute;
     }
 
     .topright{
         display: flex;
-        justify-content: space-around;
+        margin: 0 0 0 auto;
+        padding-bottom: 50px;
+        // justify-content: space-around;
         .limenu {
             padding-top: 10%;
             padding-left: 30px;
@@ -21,17 +25,21 @@
 
 .kvpcdown {
     font-size: 24px;
+    padding-top: 10px;
 }
 
 .kvpccenter {
     margin: 0 auto;
     position: relative;
     width: 88.9%;
+    .center01 {
+        display: block;
+    }
     .center02 {
         position: absolute;
         width: 48.3%;
         right: -60px;
-        bottom: -40px;
+        bottom: -49px;
     }
 }
 .kvspmain {
@@ -41,7 +49,7 @@
 
 
 // レスポンシブ対応
-@media (max-width:768px){
+@media (max-width:767px){
     .kvpcmain {
         display: none;
     }
@@ -51,15 +59,17 @@
         .splogo {
             margin-top: 50px;
             margin-bottom: 30px;
+            width: 31.6%;
         }
         .kvspimg {
             position: relative;
             .kvspimg01 {
                 width: 100%;
-                margin-bottom: 30px;
+                margin-bottom: 20px;
             }
             .kvspimg02 {
                 position: absolute;
+                width: 64.5%;
                 left: 30px;
                 top: 30px;
             }
