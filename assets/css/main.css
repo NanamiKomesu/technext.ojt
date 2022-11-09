@@ -1,23 +1,67 @@
 .kvpctop {
+  position: relative;
+  top: 125px;
   display: flex;
   justify-content: space-between;
   z-index: 1;
+}
+.kvpctop .logo {
+  width: 21%;
 }
 .kvpctop .topright {
   display: flex;
   justify-content: space-around;
 }
+.kvpctop .topright .limenu {
+  padding-top: 10%;
+  padding-left: 30px;
+}
+
+.kvpcdown {
+  font-size: 24px;
+}
 
 .kvpccenter {
+  margin: 0 auto;
   position: relative;
-  width: 1024px;
+  width: 88.9%;
 }
 .kvpccenter .center02 {
   position: absolute;
-  right: -110px;
+  width: 48.3%;
+  right: -60px;
   bottom: -40px;
 }
 
+.kvspmain {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .kvpcmain {
+    display: none;
+  }
+  .kvspmain {
+    display: block;
+    text-align: center;
+  }
+  .kvspmain .splogo {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .kvspmain .kvspimg {
+    position: relative;
+  }
+  .kvspmain .kvspimg .kvspimg01 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .kvspmain .kvspimg .kvspimg02 {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+  }
+}
 body {
   max-width: 1152px;
   margin: auto;

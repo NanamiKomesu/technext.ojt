@@ -1,21 +1,68 @@
 // 知花
 .kvpctop {
+    position: relative;
+    top: 125px;
     display: flex;
     justify-content: space-between;
     z-index: 1;
+    .logo {
+        width: 21%;
+    }
+
     .topright{
         display: flex;
         justify-content: space-around;
+        .limenu {
+            padding-top: 10%;
+            padding-left: 30px;
+        }
     }
 }
 
+.kvpcdown {
+    font-size: 24px;
+}
+
 .kvpccenter {
+    margin: 0 auto;
     position: relative;
-    width: 1024px;
-    // margin: 0 auto;
+    width: 88.9%;
     .center02 {
         position: absolute;
-        right: -110px;
+        width: 48.3%;
+        right: -60px;
         bottom: -40px;
+    }
+}
+.kvspmain {
+    display: none;
+}
+
+
+
+// レスポンシブ対応
+@media (max-width:768px){
+    .kvpcmain {
+        display: none;
+    }
+    .kvspmain {
+        display: block;
+        text-align: center;
+        .splogo {
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+        .kvspimg {
+            position: relative;
+            .kvspimg01 {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            .kvspimg02 {
+                position: absolute;
+                left: 30px;
+                top: 30px;
+            }
+        }
     }
 }
