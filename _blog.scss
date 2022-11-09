@@ -1,3 +1,6 @@
+// レスポンシブ(spブレイクポイント)
+$sp:767px;
+
 body {
     max-width: 1152px;
     margin: auto;
@@ -23,6 +26,7 @@ article {
 
     .blogmsg {
         font-size: 15px;
+        margin-top: 15px;
     }
 
     .blogcontainer {
@@ -39,37 +43,52 @@ article {
         .blogtxt {
             height: 200px;
             margin: 0 10px;
-
+            display: flex;
+            flex-direction: column;
         }
 
 
         .bloglink {
-            margin-top: 80px;
             font-size: 13px;
-            display: flex;
-            align-items: flex-end;
-            justify-content: flex-end;
+            margin-top: auto;
+            margin-bottom: 40px;
+            text-align: right;
 
-            a {
-                border-bottom: 1px solid black;
+
+            a::after {
+                content:"";
+                display: block;
+                width: 20px;
+                height: 2px;
+                background-color: black;
+                margin-left: auto;
             }
+            a:hover:after{
+                width: 85px;
+                height: 2px;
+                content:"";
+                display: block;
+                background-color: black;
+                margin-left: auto;
+                transition: 0.5s;
+            }  
         }
 
     }
 
-    .blogcontent:hover {
-        box-shadow: 1px 1px 12px rgba(0, 0, 0, .65);
-    }
+
 
     // articleここまで
 }
 
 footer {
+    margin-top: 50px;
     height: 100px;
     background-color: black;
-    .footertext{
+
+    .footertext {
         color: white;
-text-align: center;
-line-height: 100px;
+        text-align: center;
+        line-height: 100px;
     }
 }

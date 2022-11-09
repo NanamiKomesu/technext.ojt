@@ -83,6 +83,7 @@ article .blogtitle {
 }
 article .blogmsg {
   font-size: 15px;
+  margin-top: 15px;
 }
 article .blogcontainer {
   display: flex;
@@ -97,22 +98,35 @@ article .blogcontainer .blogcontent {
 article .blogcontainer .blogtxt {
   height: 200px;
   margin: 0 10px;
+  display: flex;
+  flex-direction: column;
 }
 article .blogcontainer .bloglink {
-  margin-top: 80px;
   font-size: 13px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  margin-top: auto;
+  margin-bottom: 40px;
+  text-align: right;
 }
-article .blogcontainer .bloglink a {
-  border-bottom: 1px solid black;
+article .blogcontainer .bloglink a::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  margin-left: auto;
 }
-article .blogcontent:hover {
-  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.65);
+article .blogcontainer .bloglink a:hover:after {
+  width: 85px;
+  height: 2px;
+  content: "";
+  display: block;
+  background-color: black;
+  margin-left: auto;
+  transition: 0.5s;
 }
 
 footer {
+  margin-top: 50px;
   height: 100px;
   background-color: black;
 }
