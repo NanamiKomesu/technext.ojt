@@ -88,6 +88,11 @@ article .blogtitle {
   text-align: center;
   margin: 65px auto;
 }
+@media screen and (max-width: 767px) {
+  article .blogtitle {
+    margin-bottom: 0;
+  }
+}
 article .blogmsg {
   font-size: 15px;
   margin-top: 15px;
@@ -136,6 +141,11 @@ article .blogcontainer .bloglink {
   margin-bottom: 40px;
   text-align: right;
 }
+@media screen and (max-width: 767px) {
+  article .blogcontainer .bloglink {
+    margin-bottom: 0;
+  }
+}
 article .blogcontainer .bloglink a::after {
   content: "";
   display: block;
@@ -155,7 +165,7 @@ article .blogcontainer .bloglink a:hover:after {
 }
 
 footer {
-  height: 80px;
+  height: 100px;
   width: 100%;
   margin-top: 50px;
   background-color: black;
@@ -163,7 +173,18 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  footer {
+    height: 80px;
+    margin-top: 40px;
+  }
+}
 footer .footertext {
   color: white;
   font-size: 15px;
+}
+@media screen and (max-width: 767px) {
+  footer .footertext {
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=main.css.map */

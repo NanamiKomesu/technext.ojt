@@ -29,6 +29,9 @@ article {
         font-size: 30px;
         text-align: center;
         margin: 65px auto;
+        @include sp{
+        margin-bottom: 0;
+        }
     }
 
     .blogmsg {
@@ -82,6 +85,9 @@ article {
             margin-top: auto;
             margin-bottom: 40px;
             text-align: right;
+            @include sp{
+            margin-bottom: 0;
+            }
 
 
             a::after {
@@ -110,17 +116,24 @@ article {
 
 
 footer {
-    height: 80px;
+    height: 100px;
     width: 100%;
     margin-top: 50px;
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+    @include sp{
+    height: 80px;
+    margin-top: 40px;
+    }
 
 
     .footertext {
         color: white;
         font-size: 15px;
+        @include sp{
+        font-size: 10px;
+        }
     }
 }
