@@ -59,7 +59,7 @@ article {
 
             @include sp {
                 width: 100%;
-                margin: 0 auto;
+                // margin: 0 auto;
                 margin-bottom: 40px;
             }
 
@@ -118,10 +118,10 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 
     .footertext {
         color: white;
-    font-size: 15px;
+        font-size: 15px;
     }
 }

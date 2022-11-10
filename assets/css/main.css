@@ -43,6 +43,9 @@
 }
 
 @media (max-width: 767px) {
+  header {
+    display: none;
+  }
   .kvpcmain {
     display: none;
   }
@@ -113,7 +116,6 @@ article .blogcontainer .blogcontent {
 @media screen and (max-width: 767px) {
   article .blogcontainer .blogcontent {
     width: 100%;
-    margin: 0 auto;
     margin-bottom: 40px;
   }
 }

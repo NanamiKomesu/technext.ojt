@@ -51,6 +51,9 @@
 
 // レスポンシブ対応
 @media (max-width:767px){
+    header{
+    display: none;
+    }
     .kvpcmain{
         display: none;
     }
