@@ -36,13 +36,17 @@
         margin: 0 auto;
         display: block;
     }
-    .center02 {
-        position: absolute;
-        width: 48.3%;
-        right: -60px;
-        bottom: -49px;
-    }
+    
 }
+
+.center02 {
+    position: absolute;
+    // width: 48.3%;
+    right: 60px;
+    // bottom: -49px;
+    top: 398px;
+}
+
 .kvspmain {
     display: none;
 }
@@ -71,12 +75,13 @@
                 width: 100%;
                 margin-bottom: 20px;
             }
-            .kvspimg02 {
-                position: absolute;
-                width: 64.5%;
-                left: 30px;
-                top: 30px;
-            }
+           
+        }
+        .kvspimg02 {
+            position: absolute;
+            width: 64.5%;
+            left: 20px;
+            top: 220px;
         }
     }
 }

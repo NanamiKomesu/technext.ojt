@@ -31,11 +31,11 @@
   margin: 0 auto;
   display: block;
 }
-.kvpccenter .center02 {
+
+.center02 {
   position: absolute;
-  width: 48.3%;
-  right: -60px;
-  bottom: -49px;
+  right: 60px;
+  top: 398px;
 }
 
 .kvspmain {
@@ -65,11 +65,11 @@
     width: 100%;
     margin-bottom: 20px;
   }
-  .kvspmain .kvspimg .kvspimg02 {
+  .kvspmain .kvspimg02 {
     position: absolute;
     width: 64.5%;
-    left: 30px;
-    top: 30px;
+    left: 20px;
+    top: 220px;
   }
 }
 main,
