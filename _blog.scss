@@ -1,6 +1,12 @@
 // レスポンシブ(spブレイクポイント)
 $sp: 767px;
 
+@mixin sp {
+    @media screen and (max-width: ($sp)) {
+        @content;
+    }
+}
+
 main,
 header {
     max-width: 1152px;
@@ -31,7 +37,7 @@ article {
     }
 
     .blogcontent:hover {
-        box-shadow: 1px 1px 12px rgba(0, 0, 0, .65);
+        box-shadow: 1px 1px 12px rgba(0, 0, 0, .2);
     }
 
     .blogcontainer {
@@ -41,14 +47,27 @@ article {
         width: 1024px;
         margin: 0 auto;
 
-        @media screen and (max-width:$sp) {
+        @include sp {
             display: block;
-
+            width: 320px;
+            margin: 0 auto;
         }
 
         .blogcontent {
             width: 30%;
             margin-bottom: 40px;
+
+            @include sp {
+                width: 100%;
+                margin: 0 auto;
+                margin-bottom: 40px;
+            }
+
+            img {
+                @include sp {
+                    width: 100%;
+                }
+            }
         }
 
         .blogtxt {
@@ -92,13 +111,17 @@ article {
 
 
 footer {
+    height: 80px;
+    width: 100%;
     margin-top: 50px;
-    height: 100px;
     background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 
     .footertext {
         color: white;
-        text-align: center;
-        line-height: 100px;
+    font-size: 15px;
     }
 }

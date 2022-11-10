@@ -90,7 +90,7 @@ article .blogmsg {
   margin-top: 15px;
 }
 article .blogcontent:hover {
-  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.65);
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.2);
 }
 article .blogcontainer {
   display: flex;
@@ -102,11 +102,25 @@ article .blogcontainer {
 @media screen and (max-width: 767px) {
   article .blogcontainer {
     display: block;
+    width: 320px;
+    margin: 0 auto;
   }
 }
 article .blogcontainer .blogcontent {
   width: 30%;
   margin-bottom: 40px;
+}
+@media screen and (max-width: 767px) {
+  article .blogcontainer .blogcontent {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  article .blogcontainer .blogcontent img {
+    width: 100%;
+  }
 }
 article .blogcontainer .blogtxt {
   height: 200px;
@@ -139,12 +153,15 @@ article .blogcontainer .bloglink a:hover:after {
 }
 
 footer {
+  height: 80px;
+  width: 100%;
   margin-top: 50px;
-  height: 100px;
   background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 footer .footertext {
   color: white;
-  text-align: center;
-  line-height: 100px;
+  font-size: 15px;
 }/*# sourceMappingURL=main.css.map */
