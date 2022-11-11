@@ -9,7 +9,7 @@ $sp: 767px;
 
 main,
 header {
-    max-width: 1152px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -90,7 +90,7 @@ article {
             }
 
 
-            a::after {
+            p::after {
                 content: "";
                 display: block;
                 width: 20px;
@@ -99,7 +99,7 @@ article {
                 margin-left: auto;
             }
 
-            a:hover:after {
+            p:hover:after {
                 width: 85px;
                 height: 2px;
                 content: "";

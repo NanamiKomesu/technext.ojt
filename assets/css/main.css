@@ -31,11 +31,10 @@
   margin: 0 auto;
   display: block;
 }
-
-.center02 {
+.kvpccenter .center02 {
   position: absolute;
-  right: 60px;
-  top: 398px;
+  right: 5px;
+  top: 235px;
 }
 
 .kvspmain {
@@ -65,16 +64,16 @@
     width: 100%;
     margin-bottom: 20px;
   }
-  .kvspmain .kvspimg02 {
+  .kvspmain .kvspimg .kvspimg02 {
     position: absolute;
     width: 64.5%;
     left: 20px;
-    top: 220px;
+    top: 15px;
   }
 }
 main,
 header {
-  max-width: 1152px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -146,7 +145,7 @@ article .blogcontainer .bloglink {
     margin-bottom: 0;
   }
 }
-article .blogcontainer .bloglink a::after {
+article .blogcontainer .bloglink p::after {
   content: "";
   display: block;
   width: 20px;
@@ -154,7 +153,7 @@ article .blogcontainer .bloglink a::after {
   background-color: black;
   margin-left: auto;
 }
-article .blogcontainer .bloglink a:hover:after {
+article .blogcontainer .bloglink p:hover:after {
   width: 85px;
   height: 2px;
   content: "";

@@ -4,6 +4,7 @@ $(function () {
             fade:true,
             autoplay: true,
             autoplaySpeed: 3000,
+            arrows:false,
         });
     });
 
@@ -12,6 +13,7 @@ $(function () {
             fade:true,
             autoplay: true,
             autoplaySpeed: 3000,
+            arrows:false,
         });
     });
 

@@ -1,8 +1,8 @@
    <?php get_header();?>
    <main>
         <div class="kvpcmain">
-            <div>
-                <div class="kvpccenter">
+            <div class="kvpccenter">
+                <div>
                     <div class="pcslider">
                         <div><img src="<?php echo get_template_directory_uri(); ?>/slice.img/visual_1_pc.png" alt="" class="center01"></div>
                         <div><img src="<?php echo get_template_directory_uri(); ?>/slice.img/visual_2_pc.png" alt="" class="center01"></div>
@@ -21,8 +21,8 @@
         <!-- スマホ表示 -->
         <div class="kvspmain">
             <img class="splogo" src="<?php echo get_template_directory_uri();?>/slice.img/logo.png" alt="">
-            <div>
-                <div class="kvspimg">
+            <div class="kvspimg">
+                <div>
                     <div class="spslider">
                         <div><img class="kvspimg01" src="<?php echo get_template_directory_uri();?>/slice.img/visual_1_sp.png" alt=""></div>
                         <div><img class="kvspimg01" src="<?php echo get_template_directory_uri();?>/slice.img/visual_2_sp.png" alt=""></div>
@@ -49,8 +49,7 @@
                 while (have_posts()):
               the_post();
             ?>
-            <a href="<?php echo get_permalink(  );?>">
-                <div class="blogcontent">
+            <a class="blogcontent" href="<?php echo get_permalink(  );?>">
                     <img src="<?php the_post_thumbnail_url('medium'); ?>" alt="">
                     <div class="blogtxt">
                         <p><?php echo get_the_date(); ?></p>
@@ -58,10 +57,9 @@
 
                         <div class="bloglink"> 
                            <p>READ MORE</p>
-                         </a>
                         </div>
                     </div>
-                </div>
+                </a>
                 <?php
                  endwhile;
                 else:
