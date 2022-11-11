@@ -2,7 +2,7 @@
 // 投稿ページにサムネイルを追加する方法
 add_theme_support('post-thumbnails');
 
-// jsの関数定義
+ // jsの関数定義
 function my_script() {
 wp_enqueue_script(
  'myscript',

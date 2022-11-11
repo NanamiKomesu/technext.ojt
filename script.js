@@ -1,5 +1,4 @@
-console.log(test);
-
+$(function(){
 $(document).on("ready",function(){
     $(".pcslider").slick({
        autoplay:true,
@@ -12,4 +11,6 @@ $(document).on("ready",function(){
        autoplay:true,
        autoplaySpeed:3000,
     });
+});
+
 });
