@@ -50,7 +50,7 @@
               the_post();
             ?>
                 <div class="blogcontent">
-                    <img src="<?php the_post_thumbnail_url('medium'); ?>/slice.img/post_img_1.png" alt="">
+                    <img src="<?php the_post_thumbnail_url('medium'); ?>" alt="">
                     <div class="blogtxt">
                         <p><?php the_time( get_option( 'date_format' ) ); ?></p>
                         <p class="blogmsg"><?php the_content();?></p>
