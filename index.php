@@ -42,15 +42,32 @@
         <article>
             <h1 class="blogtitle">Latest Articles</h1>
             <div class="blogcontainer" id="main">
+
+            <!-- メインループの記載 -->
+            <?php
+              if (have_posts()): 
+                while (have_posts()):
+              the_post();
+            ?>
                 <div class="blogcontent">
-                    <img src="<?php echo get_template_directory_uri(); ?>/slice.img/post_img_1.png" alt="">
+                    <img src="<?php the_post_thumbnail_url('medium'); ?>/slice.img/post_img_1.png" alt="">
                     <div class="blogtxt">
-                        <p>2018/5/20</p>
-                        <p class="blogmsg">おしゃれカフェがありますよ</p>
+                        <p><?php the_time( get_option( 'date_format' ) ); ?></p>
+                        <p class="blogmsg"><?php the_content();?></p>
                         <div class="bloglink"><a href="">READ MORE</a></div>
                     </div>
                 </div>
-                <div class="blogcontent">
+                <?php
+                 endwhile;
+                else:
+                   ?>
+<div class="blogcontent">
+                    <h2>表示する記事がありません</h2>
+                </div>
+                <?php endif; ?>
+
+
+                <!-- <div class="blogcontent">
                     <img src="<?php echo get_template_directory_uri(); ?>/slice.img/post_img_2.png" alt="">
                     <div class="blogtxt">
                         <p>2018/5/19</p>
@@ -91,9 +108,10 @@
                         <p class="blogmsg">ベイエリアおしゃれすぎる問題</p>
                         <div class="bloglink"><a href="">READ MORE</a></div>
                     </div>
-                </div>
+                </div> -->
             </div>
+            </article>
     </main>
-    </article>
+    
     <?php get_footer();?>
 
