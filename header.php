@@ -20,7 +20,7 @@
     <!-- 知花 -->
     <header>
         <div class="kvpctop">
-            <img class="logo" src="./slice.img/logo.png" alt="ロゴ">
+            <img class="logo" src="<?php echo get_template_directory_uri(); ?>/slice.img/logo.png" alt="ロゴ">
             <ul class="topright">
                 <li class="limenu">Menu01</li>
                 <li class="limenu">Menu02</li>

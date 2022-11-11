@@ -1,3 +1,5 @@
+console.log(test);
+
 $(document).on("ready",function(){
     $(".pcslider").slick({
        autoplay:true,
