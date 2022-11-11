@@ -3,7 +3,7 @@
         <div class="kvpcmain">
             <div class="kvpccenter">
                 <div>
-                    <div class="pcslider">
+                    <div class="pcslider slider">
                         <div><img src="<?php echo get_template_directory_uri(); ?>/slice.img/visual_1_pc.png" alt="" class="center01"></div>
                         <div><img src="<?php echo get_template_directory_uri(); ?>/slice.img/visual_2_pc.png" alt="" class="center01"></div>
                         <div><img src="<?php echo get_template_directory_uri(); ?>/slice.img/visual_3_pc.png" alt="" class="center01"></div>
@@ -23,7 +23,7 @@
             <img class="splogo" src="<?php echo get_template_directory_uri();?>/slice.img/logo.png" alt="">
             <div class="kvspimg">
                 <div>
-                    <div class="spslider">
+                    <div class="spslider slider">
                         <div><img class="kvspimg01" src="<?php echo get_template_directory_uri();?>/slice.img/visual_1_sp.png" alt=""></div>
                         <div><img class="kvspimg01" src="<?php echo get_template_directory_uri();?>/slice.img/visual_2_sp.png" alt=""></div>
                         <div><img class="kvspimg01" src="<?php echo get_template_directory_uri();?>/slice.img/visual_3_sp.png" alt=""></div>
