@@ -50,9 +50,9 @@
               the_post();
             ?>
             <a class="blogcontent" href="<?php echo get_permalink(  );?>">
-                    <img src="<?php the_post_thumbnail_url('medium'); ?>" alt="">
+                    <img class=blogimg src="<?php the_post_thumbnail_url('medium'); ?>" alt="">
                     <div class="blogtxt">
-                        <p><?php echo get_the_date(); ?></p>
+                        <p class="blogdate"><?php echo get_the_date(); ?></p>
                         <p class="blogmsg"><?php the_title();?></p>
 
                         <div class="bloglink"> 

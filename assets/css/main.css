@@ -89,6 +89,11 @@ article p,
 article a {
   font-weight: 600;
 }
+@media screen and (max-width: 767px) {
+  article p {
+    margin-bottom: 30px;
+  }
+}
 article .blogtitle {
   font-size: 30px;
   text-align: center;
@@ -130,9 +135,12 @@ article .blogcontainer .blogcontent {
     margin-bottom: 40px;
   }
 }
+article .blogcontainer .blogcontent .blogimg {
+  width: 100%;
+}
 @media screen and (max-width: 767px) {
-  article .blogcontainer .blogcontent img {
-    width: 100%;
+  article .blogcontainer .blogcontent .blogimg {
+    max-width: 100%;
   }
 }
 article .blogcontainer .blogtxt {
@@ -140,6 +148,11 @@ article .blogcontainer .blogtxt {
   margin: 0 10px;
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 767px) {
+  article .blogcontainer .blogdate {
+    margin-bottom: 5px;
+  }
 }
 article .blogcontainer .bloglink {
   font-size: 13px;
@@ -159,6 +172,7 @@ article .blogcontainer .bloglink p::after {
   height: 2px;
   background-color: black;
   margin-left: auto;
+  margin-top: 10px;
 }
 article .blogcontainer .bloglink p:hover:after {
   width: 85px;
@@ -168,6 +182,7 @@ article .blogcontainer .bloglink p:hover:after {
   background-color: black;
   margin-left: auto;
   transition: 0.5s;
+  margin-top: 10px;
 }
 
 footer {
