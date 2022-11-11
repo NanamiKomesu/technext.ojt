@@ -49,13 +49,17 @@
                 while (have_posts()):
               the_post();
             ?>
+            <a href="<?php echo get_permalink(  );?>">
                 <div class="blogcontent">
                     <img src="<?php the_post_thumbnail_url('medium'); ?>" alt="">
                     <div class="blogtxt">
                         <p><?php echo get_the_date(); ?></p>
                         <p class="blogmsg"><?php the_title();?></p>
 
-                        <div class="bloglink"><a href="">READ MORE</a></div>
+                        <div class="bloglink"> 
+                           <p>READ MORE</p>
+                         </a>
+                        </div>
                     </div>
                 </div>
                 <?php
