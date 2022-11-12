@@ -1,76 +1,76 @@
-   <?php get_header();?>
+   <?php get_header(); ?>
    <main>
-        <div class="kvpcmain">
-            <div class="kvpccenter">
-                <div>
-                    <div class="pcslider slider">
-                        <div><img src="<?php echo get_template_directory_uri(); ?>/slice.img/visual_1_pc.png" alt="" class="center01"></div>
-                        <div><img src="<?php echo get_template_directory_uri(); ?>/slice.img/visual_2_pc.png" alt="" class="center01"></div>
-                        <div><img src="<?php echo get_template_directory_uri(); ?>/slice.img/visual_3_pc.png" alt="" class="center01"></div>
-                        <div><img src="<?php echo get_template_directory_uri(); ?>/slice.img/visual_4_pc.png" alt="" class="center01"></div>
-                        <div><img src="<?php echo get_template_directory_uri(); ?>/slice.img/visual_5_pc.png" alt="" class="center01"></div>
-                        <div><img src="<?php echo get_template_directory_uri(); ?>/slice.img/visual_6_pc.png" alt="" class="center01"></div>
-                        <div><img src="<?php echo get_template_directory_uri(); ?>/slice.img/visual_7_pc.png" alt="" class="center01"></div>
-                    </div>
-                </div>
-                <img src="<?php echo get_template_directory_uri(); ?>/slice.img/visual_text_pc.png" alt="" class="center02">
-            </div>
-            <p class="kvpcdown">進化し続ける「街」アメリカンビレッジマガジン</p>
-        </div>
+       <div class="kvpcmain">
+           <div class="kvpccenter">
+               <div>
+                   <div class="pcslider slider">
+                       <div><img src="<?php echo get_template_directory_uri(); ?>/slice.img/visual_1_pc.png" alt="" class="center01"></div>
+                       <div><img src="<?php echo get_template_directory_uri(); ?>/slice.img/visual_2_pc.png" alt="" class="center01"></div>
+                       <div><img src="<?php echo get_template_directory_uri(); ?>/slice.img/visual_3_pc.png" alt="" class="center01"></div>
+                       <div><img src="<?php echo get_template_directory_uri(); ?>/slice.img/visual_4_pc.png" alt="" class="center01"></div>
+                       <div><img src="<?php echo get_template_directory_uri(); ?>/slice.img/visual_5_pc.png" alt="" class="center01"></div>
+                       <div><img src="<?php echo get_template_directory_uri(); ?>/slice.img/visual_6_pc.png" alt="" class="center01"></div>
+                       <div><img src="<?php echo get_template_directory_uri(); ?>/slice.img/visual_7_pc.png" alt="" class="center01"></div>
+                   </div>
+               </div>
+               <img src="<?php echo get_template_directory_uri(); ?>/slice.img/visual_text_pc.png" alt="" class="center02">
+           </div>
+           <p class="kvpcdown">進化し続ける「街」アメリカンビレッジマガジン</p>
+       </div>
 
-        <!-- スマホ表示 -->
-        <div class="kvspmain">
-            <img class="splogo" src="<?php echo get_template_directory_uri();?>/slice.img/logo.png" alt="">
-            <div class="kvspimg">
-                <div>
-                    <div class="spslider slider">
-                        <div><img class="kvspimg01" src="<?php echo get_template_directory_uri();?>/slice.img/visual_1_sp.png" alt=""></div>
-                        <div><img class="kvspimg01" src="<?php echo get_template_directory_uri();?>/slice.img/visual_2_sp.png" alt=""></div>
-                        <div><img class="kvspimg01" src="<?php echo get_template_directory_uri();?>/slice.img/visual_3_sp.png" alt=""></div>
-                        <div><img class="kvspimg01" src="<?php echo get_template_directory_uri();?>/slice.img/visual_4_sp.png" alt=""></div>
-                        <div><img class="kvspimg01" src="<?php echo get_template_directory_uri();?>/slice.img/visual_5_sp.png" alt=""></div>
-                        <div><img class="kvspimg01" src="<?php echo get_template_directory_uri();?>/slice.img/visual_6_sp.png" alt=""></div>
-                        <div><img class="kvspimg01" src="<?php echo get_template_directory_uri();?>/slice.img/visual_7_sp.png" alt=""></div>
-                    </div>
-                </div>
-                <img class="kvspimg02" src="<?php echo get_template_directory_uri();?>/slice.img/visual_text_sp.png" alt="">
-            </div>
-            <p class="kvpcdown">進化し続ける「街」<br>アメリカンビレッジマガジン</p>
-        </div>
-
-
-        <article>
-            <h1 class="blogtitle">Latest Articles</h1>
-            <div class="blogcontainer" id="main">
-
-            <!-- メインループの記載 -->
-            <?php
-              if (have_posts()): 
-                while (have_posts()):
-              the_post();
-            ?>
-            <a class="blogcontent" href="<?php echo get_permalink(  );?>">
-                    <img class=blogimg src="<?php the_post_thumbnail_url('medium'); ?>" alt="">
-                    <div class="blogtxt">
-                        <p class="blogdate"><?php echo get_the_date(); ?></p>
-                        <p class="blogmsg"><?php the_title();?></p>
-
-                        <div class="bloglink"> 
-                           <p>READ MORE</p>
-                        </div>
-                    </div>
-                </a>
-                <?php
-                 endwhile;
-                else:
-                   ?>
-<div class="blogcontent">
-                    <h2>表示する記事がありません</h2>
-                </div>
-                <?php endif; ?>
+       <!-- スマホ表示 -->
+       <div class="kvspmain">
+           <img class="splogo" src="<?php echo get_template_directory_uri(); ?>/slice.img/logo.png" alt="">
+           <div class="kvspimg">
+               <div>
+                   <div class="spslider slider">
+                       <div><img class="kvspimg01" src="<?php echo get_template_directory_uri(); ?>/slice.img/visual_1_sp.png" alt=""></div>
+                       <div><img class="kvspimg01" src="<?php echo get_template_directory_uri(); ?>/slice.img/visual_2_sp.png" alt=""></div>
+                       <div><img class="kvspimg01" src="<?php echo get_template_directory_uri(); ?>/slice.img/visual_3_sp.png" alt=""></div>
+                       <div><img class="kvspimg01" src="<?php echo get_template_directory_uri(); ?>/slice.img/visual_4_sp.png" alt=""></div>
+                       <div><img class="kvspimg01" src="<?php echo get_template_directory_uri(); ?>/slice.img/visual_5_sp.png" alt=""></div>
+                       <div><img class="kvspimg01" src="<?php echo get_template_directory_uri(); ?>/slice.img/visual_6_sp.png" alt=""></div>
+                       <div><img class="kvspimg01" src="<?php echo get_template_directory_uri(); ?>/slice.img/visual_7_sp.png" alt=""></div>
+                   </div>
+               </div>
+               <img class="kvspimg02" src="<?php echo get_template_directory_uri(); ?>/slice.img/visual_text_sp.png" alt="">
+           </div>
+           <p class="kvpcdown">進化し続ける「街」<br>アメリカンビレッジマガジン</p>
+       </div>
 
 
-                <!-- <div class="blogcontent">
+       <article>
+           <h1 class="blogtitle">Latest Articles</h1>
+           <div class="blogcontainer" id="main">
+
+               <!-- メインループの記載 -->
+               <?php
+                if (have_posts()) :
+                    while (have_posts()) :
+                        the_post();
+                ?>
+                       <a class="blogcontent" href="<?php echo get_permalink(); ?>">
+                           <img class=blogimg src="<?php the_post_thumbnail_url('medium'); ?>" alt="">
+                           <div class="blogtxt">
+                               <p class="blogdate"><?php echo get_the_date(); ?></p>
+                               <p class="blogmsg"><?php the_title(); ?></p>
+
+                               <div class="bloglink">
+                                   <p>READ MORE</p>
+                               </div>
+                           </div>
+                       </a>
+                   <?php
+                    endwhile;
+                else :
+                    ?>
+                   <div class="blogcontent">
+                       <h2>表示する記事がありません</h2>
+                   </div>
+               <?php endif; ?>
+
+
+               <!-- <div class="blogcontent">
                     <img src="<?php echo get_template_directory_uri(); ?>/slice.img/post_img_2.png" alt="">
                     <div class="blogtxt">
                         <p>2018/5/19</p>
@@ -112,9 +112,8 @@
                         <div class="bloglink"><a href="">READ MORE</a></div>
                     </div>
                 </div> -->
-            </div>
-            </article>
-    </main>
-    
-    <?php get_footer();?>
+           </div>
+       </article>
+   </main>
 
+   <?php get_footer(); ?>
