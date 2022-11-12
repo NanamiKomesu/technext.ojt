@@ -137,23 +137,22 @@ article {
 
 
 footer {
-    height: 100px;
     width: 100%;
+    display: block;
+    text-align: center;
     margin-top: 50px;
     background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     @include sp{
-    height: 80px;
-    margin-top: 40px;
+    margin-top: 30px;
     }
 
 
     .footertext {
         color: white;
         font-size: 15px;
+        padding:40px;
         @include sp{
+            padding: 30px;
         font-size: 10px;
         }
     }
