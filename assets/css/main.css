@@ -72,13 +72,15 @@
   }
 }
 main,
-header {
+header,
+footer {
   width: 1152px;
   margin: 0 auto;
 }
 @media screen and (max-width: 767px) {
   main,
-header {
+header,
+footer {
     width: 100%;
     margin: 0 auto;
   }
@@ -186,7 +188,6 @@ article .blogcontainer .bloglink p:hover:after {
 }
 
 footer {
-  width: 100%;
   display: block;
   text-align: center;
   margin-top: 50px;

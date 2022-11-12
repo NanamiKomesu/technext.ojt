@@ -8,7 +8,8 @@ $sp: 767px;
 }
 
 main,
-header {
+header,
+footer {
     width: 1152px;
     margin: 0 auto;
     @include sp{
@@ -70,7 +71,7 @@ article {
         .blogcontent {
             width: 30%;
             margin-bottom: 40px;
-
+            
             @include sp {
                 width: 100%;
                 margin-bottom: 40px;
@@ -137,7 +138,6 @@ article {
 
 
 footer {
-    width: 100%;
     display: block;
     text-align: center;
     margin-top: 50px;
