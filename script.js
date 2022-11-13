@@ -1,4 +1,4 @@
-$(function () {
+jQuery(function () {
     $(document).on("ready", function () {
         $(".slider").slick({
             fade:true,
