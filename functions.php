@@ -24,7 +24,11 @@ add_theme_support( 'custom-header',$custom_header_defaults);
 //     add_action( 'wp_enqueue_scripts', 'theme_name_files' );
 
 
-
+//register_nav_menu() のソース（定義）
+function register_my_menu() {
+    register_nav_menu( 'main-menu','Main Menu');
+  }
+  add_action( 'after_setup_theme', 'register_my_menu' );
 
 
 
