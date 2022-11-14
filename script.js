@@ -1,12 +1,21 @@
 jQuery(function () {
-    $(document).on("ready", function () {
-        $(".slider").slick({
-            fade:true,
-            autoplay: true,
-            autoplaySpeed: 3000,
-            arrows:false,
-        });
-    });
+    // $(document).on("ready", function () {
+    //     $(".slider").slick({
+    //         fade:true,
+    //         autoplay: true,
+    //         autoplaySpeed: 3000,
+    //         arrows:false,
+    //     });
+    // });
+
+    jQuery(window).load(function(){
+      jQuery('#hero .slider').slick({
+        fade:true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows:false,
+      });
+    });    
 
 // 追加部分
 var show = 6; //最初に表示する件数

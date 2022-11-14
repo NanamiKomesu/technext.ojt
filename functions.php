@@ -16,6 +16,19 @@ $custom_header_defaults = array(
     );
 add_theme_support( 'custom-header',$custom_header_defaults);
 
+//ヘッダー画像のIDを取得
+function custom_header_get_attachment_id_by_url( $url ) {
+  $parse_url  = explode( parse_url( WP_CONTENT_URL, PHP_URL_PATH ), $url );
+  $this_host = str_ireplace( 'www.', '', parse_url( home_url(), PHP_URL_HOST ) );
+  $file_host = str_ireplace( 'www.', '', parse_url( $url, PHP_URL_HOST ) );
+  if ( ! isset( $parse_url[1] ) || empty( $parse_url[1] ) || ( $this_host != $file_host ) ) {
+    return;
+  }
+  global $wpdb;
+  $attachment = $wpdb->get_col( $wpdb->prepare( "SELECT ID FROM {$wpdb->prefix}posts WHERE guid RLIKE %s;", $parse_url[1] ) );
+  return $attachment[0];
+}
+
 
 // jQueryの読み込み
 // function theme_name_files() {

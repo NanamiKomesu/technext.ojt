@@ -32,7 +32,12 @@
   margin: 0 auto;
   display: block;
 }
-.kvpccenter .center02 {
+
+img {
+  margin: 0 auto;
+}
+
+.center02 {
   position: absolute;
   right: 5px;
   top: 235px;
