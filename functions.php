@@ -16,6 +16,7 @@ $custom_header_defaults = array(
     );
 add_theme_support( 'custom-header',$custom_header_defaults);
 
+
 // jQueryの読み込み
 // function theme_name_files() {
 //     //utility.jsの読み込み＆jQuery読み込み
