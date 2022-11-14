@@ -45,6 +45,7 @@
            <div class="blogcontainer" id="main">
 
                <!-- メインループの記載 -->
+               
                <?php
                 if (have_posts()) :
                     while (have_posts()) :
@@ -71,48 +72,14 @@
                <?php endif; ?>
 
 
-               <!-- <div class="blogcontent">
-                    <img src="<?php echo get_template_directory_uri(); ?>/slice.img/post_img_2.png" alt="">
-                    <div class="blogtxt">
-                        <p>2018/5/19</p>
-                        <p class="blogmsg">あのネオンはいつ交換するのか！？観覧車の謎に迫る！</p>
-                        <div class="bloglink"><a href="">READ MORE</a></div>
-                    </div>
-                </div>
+    <!-- 表示する要素 -->
+    <div class="more">
+					<button>もっと記事を見る</button>
+				</div>
 
 
-                <div class="blogcontent">
-                    <img src="<?php echo get_template_directory_uri(); ?>/slice.img/post_img_3.png" alt="">
-                    <div class="blogtxt">
-                        <p>2018/5/18</p>
-                        <p class="blogmsg">ラソナの社内はこんなのよ</p>
-                        <div class="bloglink"><a href="">READ MORE</a></div>
-                    </div>
-                </div>
-                <div class="blogcontent">
-                    <img src="<?php echo get_template_directory_uri(); ?>/slice.img/post_img_4.png" alt="">
-                    <div class="blogtxt">
-                        <p>2018/5/27</p>
-                        <p class="blogmsg">お隣のアラハはハワイ？</p>
-                        <div class="bloglink"><a href="">READ MORE</a></div>
-                    </div>
-                </div>
-                <div class="blogcontent">
-                    <img src="<?php echo get_template_directory_uri(); ?>/slice.img/post_img_5.png" alt="">
-                    <div class="blogtxt">
-                        <p>2018/5/16</p>
-                        <p class="blogmsg">なぜテント？ラソナの人に聞いてみた</p>
-                        <div class="bloglink"><a href="">READ MORE</a></div>
-                    </div>
-                </div>
-                <div class="blogcontent">
-                    <img src="<?php echo get_template_directory_uri(); ?>/slice.img/post_img_6.png" alt="">
-                    <div class="blogtxt">
-                        <p>2018/5/15</p>
-                        <p class="blogmsg">ベイエリアおしゃれすぎる問題</p>
-                        <div class="bloglink"><a href="">READ MORE</a></div>
-                    </div>
-                </div> -->
+  
+
            </div>
        </article>
    </main>

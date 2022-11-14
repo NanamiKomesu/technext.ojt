@@ -32,8 +32,5 @@ function register_my_menu() {
 
 
 
-
-
-
 ?>
 
