@@ -208,6 +208,14 @@ article .blogcontainer .bloglink p:hover:after {
   box-shadow: 0px 5px 0 #000;
   transition: 0.3s;
 }
+@media screen and (max-width: 767px) {
+  .more button {
+    width: 80px;
+    height: 20px;
+    font-size: 10px;
+    margin: 5px auto 0;
+  }
+}
 
 .more button:hover {
   transform: translate3d(0, 5px, 0);
