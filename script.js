@@ -17,6 +17,17 @@ jQuery(function () {
       });
     });    
 
+    jQuery(window).load(function(){
+      jQuery('#subhero .slider').slick({
+        fade:true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows:false,
+      });
+    });    
+
+    
+
 // 追加部分
 var show = 6; //最初に表示する件数
 var num = 6;  //もっと見るで表示する件数
