@@ -171,6 +171,7 @@ article {
 
 /* もっと見るの非表示 */
 .is-hidden {
+display: none;
   visibility: hidden;
   opacity: 0;
   height: 0;
