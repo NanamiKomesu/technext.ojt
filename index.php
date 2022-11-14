@@ -69,19 +69,17 @@
                    <div class="blogcontent">
                        <h2>表示する記事がありません</h2>
                    </div>
-               <?php endif; ?>
+               <?php endif; ?>  
 
+           
+       </article>
 
-    <!-- 表示する要素 -->
+          <!-- 表示する要素 -->
     <div class="more">
 					<button>もっと記事を見る</button>
 				</div>
+                </div>
 
-
-  
-
-           </div>
-       </article>
    </main>
 
    <?php get_footer(); ?>

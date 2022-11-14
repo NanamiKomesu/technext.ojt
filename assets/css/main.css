@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .kvpctop {
   position: relative;
   display: flex;
@@ -185,6 +186,43 @@ article .blogcontainer .bloglink p:hover:after {
   margin-left: auto;
   transition: 0.5s;
   margin-top: 10px;
+}
+
+/* もっと見るのボタン */
+.more {
+  text-align: center;
+  padding-top: 30px;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.more button {
+  display: block;
+  width: 160px;
+  height: 40px;
+  margin: 10px auto 0;
+  color: #fff;
+  font-size: 15px;
+  background: gray;
+  box-shadow: 0px 5px 0 #000;
+  transition: 0.3s;
+}
+
+.more button:hover {
+  transform: translate3d(0, 5px, 0);
+  color: black;
+  box-shadow: none;
+  background: #fff;
+}
+
+/* もっと見るの非表示 */
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  margin: 0 10px;
+  padding: 0;
 }
 
 footer {
