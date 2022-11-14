@@ -1,30 +1,30 @@
 jQuery(function () {
-    // $(document).on("ready", function () {
-    //     $(".slider").slick({
-    //         fade:true,
-    //         autoplay: true,
-    //         autoplaySpeed: 3000,
-    //         arrows:false,
-    //     });
-    // });
+    $(document).on("ready", function () {
+        $(".slider").slick({
+            fade:true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            arrows:false,
+        });
+    });
 
-    jQuery(window).load(function(){
-      jQuery('#hero .slider').slick({
-        fade:true,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        arrows:false,
-      });
-    });    
+    // jQuery(window).load(function(){
+    //   jQuery('#hero .slider').slick({
+    //     fade:true,
+    //     autoplay: true,
+    //     autoplaySpeed: 3000,
+    //     arrows:false,
+    //   });
+    // });    
 
-    jQuery(window).load(function(){
-      jQuery('#subhero .slider').slick({
-        fade:true,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        arrows:false,
-      });
-    });    
+    // jQuery(window).load(function(){
+    //   jQuery('#subhero .slider').slick({
+    //     fade:true,
+    //     autoplay: true,
+    //     autoplaySpeed: 3000,
+    //     arrows:false,
+    //   });
+    // });    
 
     
 
