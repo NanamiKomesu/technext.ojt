@@ -22,6 +22,23 @@
        <!-- スマホ表示 -->
        <div class="kvspmain">
            <img class="splogo" src="<?php echo get_template_directory_uri(); ?>/slice.img/logo.png" alt="">
+          
+               <!--ハンバーガーナビ 追加 -->
+     <nav class="header__nav nav" id="js-nav">
+          <ul class="nav__items nav-items">
+            <li class="nav-items__item"><a href="">Menu01</a></li>
+            <li class="nav-items__item"><a href="">Menu02</a></li>
+            <li class="nav-items__item"><a href="">Menu03</a></li>
+            <li class="nav-items__item"><a href="">Menu04</a></li>
+          </ul>
+        </nav>
+
+        <button class="header__hamburger hamburger" id="js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+           
            <div class="kvspimg">
                <div>
                    <div class="spslider slider">
