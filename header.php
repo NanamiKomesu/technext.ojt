@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/main.css">
     <title>Document</title>
-    <!-- <?php wp_deregister_script('jquery'); wp_enqueue_script('script.js','/wp-content/themes/technext_ojt/js/script.js'); ?> -->
+    <?php wp_deregister_script('jquery'); wp_enqueue_script('script.js','/wp-content/themes/technext_ojt/js/script.js'); ?>
     <?php wp_head();?>
 
 </head>
@@ -29,5 +29,4 @@
                 <li class="limenu">Menu04</li>
             </ul>
         </div>
-
     </header>
